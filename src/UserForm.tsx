@@ -53,38 +53,38 @@ export function UserForm({
       </Typography>
       <p>Please Enter you details below</p>
       <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <TextField
-            fullWidth
-            select
-            label="Title"
-            value={title}
-            onChange={(e) => updateFields({ title: e.target.value })}
-          >
-            <MenuItem value="Mr">Mr</MenuItem>
-            <MenuItem value="Mrs">Mrs</MenuItem>
-          </TextField>
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            fullWidth
-            label="First Name"
-            required
-            type="text"
-            value={firstName}
-            onChange={(e) => updateFields({ firstName: e.target.value })}
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
-            fullWidth
-            label="Last Name"
-            required
-            type="text"
-            value={lastName}
-            onChange={(e) => updateFields({ lastName: e.target.value })}
-          />
-        </Grid>
+        <Grid item xs={2}>
+    <TextField
+      fullWidth
+      select
+      label="Title"
+      value={title}
+      onChange={(e) => updateFields({ title: e.target.value })}
+    >
+      <MenuItem value="Mr">Mr</MenuItem>
+      <MenuItem value="Mrs">Mrs</MenuItem>
+    </TextField>
+  </Grid>
+  <Grid item xs={5}>
+    <TextField
+      fullWidth
+      label="First Name"
+      required
+      type="text"
+      value={firstName}
+      onChange={(e) => updateFields({ firstName: e.target.value })}
+    />
+  </Grid>
+  <Grid item xs={5}>
+    <TextField
+      fullWidth
+      label="Last Name"
+      required
+      type="text"
+      value={lastName}
+      onChange={(e) => updateFields({ lastName: e.target.value })}
+    />
+  </Grid>
         <Grid item xs={12}>
           <TextField
             fullWidth
